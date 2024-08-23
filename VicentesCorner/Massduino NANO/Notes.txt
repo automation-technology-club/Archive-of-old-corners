@@ -1,0 +1,34 @@
+-----19 DEC 2016 -----------------------
+
+Just arrived 10 little boards from China...
+They are using the MD-328D (a 60 cents ATMEGA328 Clone).
+    This IC can run from 1.8 to 5 Volts at 20Mnz.
+    Same memory.
+    Faster instructions.
+    2 8-bit "real" Digital-to-Analog Converters...
+Can work with 3.3Volts or 5 Volts ( Jumper Selectable )
+Works under the Arduino IDE... 
+
+This microcontroller (MD-328D) will cost 60 cents in quantities (1000).
+If really works, as they say, a lot of commercial products  can be developed using the Arduino.
+
+---- 06 FEB 2017  ----------------------
+This Arduino NANO Clone (Cloned board and cloned Microcontroller) is available today
+for 1.99$
+http://www.ebay.com/itm/222140435718?rmvSB=true
+
+There is a cheaper version called "Massduino Nano Lite" ,
+but an aditional USB/Serial adapter is necessary.
+
+More information at:
+http://www.inhaos.com/product_info.php?products_id=161
+
+
+Demo code:
+The Sketch  dac_Tone_01_Test.ino
+
+Is used to test the Digital-to-Analog capability of the Massduino NANO.
+
+Generating a 4.155 Khz tone of 8 cycles every 500 milliseconds.
+using the DAC0 (Pin 4) of the Massduino NANO (MD-328D).
+

@@ -1,0 +1,26 @@
+/*Pro_ColorGrabber_B03.pde  Agrucho 11 DIC 2016
+Multiple size color image grabber from Arduino. ver Beta 0.3
+Working with the Arduino Sketch: OV7670_ColorSender_B01.ino  Agrucho 11 DIC 2016
+
+  -The Frame trigger message "FRAMEx" defines the image size arriving.
+     where x is the value of frametype.
+     frametype=1, 320x240 pixels.
+     frametype=2, 160x120 pixels.
+     frametype=4, 80x60 pixels.
+     frametype=8, 40x30 pixels.
+   -Baudrate = 1M bauds.
+   
+Hardware: Arduino Meduino NANO and the OV7670 Camera.
+
+
+Color converter formula (YUV to RGB):
+Fom:https://thinksmallthings.wordpress.com/2012/11/03/ov7670-yuv-demystified/
+4 bytes = 2 pixels
+Byte0 and Byte2 are the luminance of each pixel, U and V define the crominance of both pixels.
+[Byte0] [Byte1] [Byte2] [Byte3]
+  Y       U       Y1       V
+R = Y + 1.4075 * (V - 128);
+G = Y - 0.3455 * (U - 128) - (0.7169 * (V - 128));
+B = Y + 1.7790 * (U - 128);
+fill(R, G, B); 
+*/

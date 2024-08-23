@@ -1,0 +1,6 @@
+					A critique of the "internet of things"
+
+This month, September 2015, I ran across an article in Linux Journal by their Senior Editor Doc Searls which I thought was relevant to the pursuit of goals some of us in this Automation Technology Club have. In this editorial Searls interviews Phil Windley who he calls the Linus of IoT. You can read the whole article at http://www.linuxjournal.com/content/true-internet-things. Windley, who has been working on GPL'd open-source code for things and how they relate, tells Searls " we won't get a true Internet of Things until we connect things together in ways that are decentralized, heterarchical and interoperable. These are key properties of the Internet, and they're sadly lacking in almost every so-called IoT product on the market."
+
+I think you will find this article elucidating.
+Don

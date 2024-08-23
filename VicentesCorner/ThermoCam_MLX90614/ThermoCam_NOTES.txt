@@ -1,0 +1,38 @@
+Project name: "Narrowing the MLX90614 Infra Red Thermometer sensing area"
+
+This project was conceived to use the MELEXIS sensor MLX90614ESF-BBA as the
+sensor element of a rudimentary Single Pixel Thermographic camera.
+The MLX90614ESF-BBA has a Field Of View of 90 degrees.
+A ROD COUPLING NUT was used to obtain a narrow FOV.
+
+The idea comes from other device, the MELEXIS MLX90614ESF-DCI, it has a black metal tube
+attached to produce FOV of 5 degrees, it also cost five times more (recomend to obtain better results).
+
+The concept was loose developed without changing the internal gain and filters of the sensor.
+Adafruit Library was used and they doesn't provide functions to do it.
+(SparkFun has a more complete library for these devices).
+
+The use of the metal ROD decrease largely the sensisitivity of the sensor.
+to compensate it without using internal gain and filters, 200 samples are added and scaled
+for each measurement.
+
+ 
+The code for this project is in the "Code" folder:
+
+Arduino code:
+/*One_Pixel_ThermoCam_02.ino  Agrucho 4 JAN 2017
+Using the MLX90614 temperature sensor, attached to a 5/15" ROD COUPLING NUT
+for more directional sensing (lower gain and sensitivity).
+A Servo controlled Pan and Tilt is used to scan 30 lines of 40 readings.
+
+Processing is used to display the thermal image: Pro_ThermoCam_01.pde
+
+*/
+
+Processing code:
+/*Pro_ThermoCam_01.pde   Agrucho 04JAN 2017
+Presentation of an image (40x30) pixels.
+Data send by the Arduino at 115200 bauds.
+Works with the Arduino Sketch: One_Pixel_ThermoCam_02.ino
+
+*/

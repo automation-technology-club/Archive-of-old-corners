@@ -1,0 +1,18 @@
+
+Arduino code:
+/*One_Pixel_ThermoCam_02.ino  Agrucho 4 JAN 2017
+Using the MLX90614 temperature sensor, attached to a 5/15" ROD COUPLING NUT
+for more directional sensing (lower gain and sensitivity).
+A Servo controlled Pan and Tilt is used to scan 30 lines of 40 readings.
+
+Processing is used to display the thermal image: Pro_ThermoCam_01.pde
+
+*/
+
+Processing code:
+/*Pro_ThermoCam_01.pde   Agrucho 04JAN 2017
+Presentation of an image (40x30) pixels.
+Data send by the Arduino at 115200 bauds.
+Works with the Arduino Sketch: One_Pixel_ThermoCam_02.ino
+
+*/
